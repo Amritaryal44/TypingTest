@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Typing Test</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="description" content="Typing Test">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Amrit Aryal">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<h1>Typing Test</h1>
+<div class="info">
+    <ul style="list-style-type: none">
+        <li>
+            <div style="background-color: rgb(184, 178, 178);height: 50px;width: 50px;"></div>
+            <span style="color:rgb(184, 178, 178)">No press</span>
+        </li>
+        <li>
+            <div style="background-color: red;height: 50px;width: 50px;"></div>
+            <span style="color:red">Wrong key</span>
+        </li>
+        <li>
+            <div style="background-color: blue;height: 50px;width: 50px;"></div>
+            <span style="color:blue">Rigth key</span>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="type-area">
+        <div class="text"></div>
+    </div>
+    <div class="timer">
+        TIME ESCAPED:
+        <div class="show-time">0s</div>
+    </div>
+    <div class="restart"><span>Restart</span></div>
+</div>
+
+<div class="result">
+    <div class="status"></div>
+</div>
+
+<div class="type-box">
+    <input id="input" type="text" placeholder="Click me and start typing ..." onkeydown="inputValue()">
+</div>
+<div class="show-word">
+</div>
+
+<p>By Amrit Aryal. &copy;copyright</p>
+<script src="dict.js"></script>
+<script src="typer.js"></script>
+
+</html>
